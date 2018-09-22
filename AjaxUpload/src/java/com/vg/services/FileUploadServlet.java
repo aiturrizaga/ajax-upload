@@ -2,7 +2,6 @@ package com.vg.services;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -40,9 +39,6 @@ public class FileUploadServlet extends HttpServlet {
             } catch (Exception e) {
                 // exception handling
             }
-
-            PrintWriter out = response.getWriter();
-            out.print("{\"status\":1}");
         }
 
     }

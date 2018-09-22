@@ -12,7 +12,7 @@ public class Dao {
         try {
             Class.forName("com.mysql.jdbc.Driver");
 //            cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Phishing", "root", "Servifast12345");
-            cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Ajax", "root", "");
+            cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Ajax", "root", "root");
         } catch (ClassNotFoundException | SQLException e) {
             System.out.println("Error: " + e);
         }
