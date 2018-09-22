@@ -2,7 +2,6 @@ package com.vg.controller;
 
 import com.vg.dao.UserDao;
 import com.vg.model.User;
-import java.io.File;
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
@@ -23,7 +22,6 @@ public class UserController implements Serializable {
 
     private User usu = new User();
     private List<User> listaUser;
-    private File file;
 
     @PostConstruct
     public void init() {
