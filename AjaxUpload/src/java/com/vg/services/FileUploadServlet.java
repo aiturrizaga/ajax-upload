@@ -24,8 +24,7 @@ public class FileUploadServlet extends HttpServlet {
         final String UPLOAD_DIRECTORY = "C:/uploads";
         if (ServletFileUpload.isMultipartContent(request)) {
             try {
-                List<FileItem> multiparts = new ServletFileUpload(
-                        new DiskFileItemFactory()).parseRequest(request);
+                List<FileItem> multiparts = new ServletFileUpload(new DiskFileItemFactory()).parseRequest(request);
                 for (FileItem item : multiparts) {
                     if (!item.isFormField()) {
                         File fileSaveDir = new File(UPLOAD_DIRECTORY);

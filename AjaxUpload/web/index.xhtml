@@ -15,7 +15,8 @@
             <h3>Subida de imagen</h3>
             <h:panelGrid columns="1">
                 <p:fileUpload id="txtFile" mode="simple" skinSimple="true" label="Escoge tu imagen"/>
-                <p:commandButton value="Enviar" actionListener="#{userController.addUser()}"/>
+                <p:commandButton value="Enviar" actionListener="#{userController.addUser()}" oncomplete="process();"/>
+                <p:remoteCommand name="process" update="sampleUploadFrm"/>
             </h:panelGrid>
         </h:form>
     </h:body>
